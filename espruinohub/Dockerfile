@@ -10,8 +10,7 @@ USER root
 ARG BUILD_ARCH
 
 RUN \
-    apk update \
-    && apk add --no-cache \
+    apk add --no-cache \
         nodejs=12.15.0-r1 \
         npm=12.15.0-r1 \
     && apk add --no-cache --virtual .build-dependencies \
@@ -20,7 +19,7 @@ RUN \
         bluez=5.52-r1 \
         linux-headers=4.19.36-r0 \
         eudev-dev=3.2.9-r1 \
-        git=2.24.2-r0 \
+        git=2.24.2-r1 \
     \
     && npm set unsafe-perm true \
     && NODE_PATH="/usr/lib/node_modules" \
