@@ -1,6 +1,6 @@
 {
     "name": "Espruino Hub",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "slug": "espruino_hub",
     "description": "BLE MQTT bridge",
     "startup": "before",

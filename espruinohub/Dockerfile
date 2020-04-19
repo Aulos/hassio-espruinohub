@@ -23,10 +23,8 @@ RUN \
         git=2.24.2-r0 \
     \
     && npm set unsafe-perm true \
-    && VERSION="76753003df534b32d2e9dad9fa74aeb0e93876a1" \
     && NODE_PATH="/usr/lib/node_modules" \
-    && npm -g i \
-        "git+https://github.com/espruino/EspruinoHub.git#${VERSION}" \
+    && npm -g i "git+https://github.com/espruino/EspruinoHub.git" \
     \
     && apk del --no-cache --purge .build-dependencies
 
