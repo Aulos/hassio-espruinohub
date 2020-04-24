@@ -11,15 +11,15 @@ ARG BUILD_ARCH
 
 RUN \
     apk add --no-cache \
-        nodejs=12.15.0-r1 \
-        npm=12.15.0-r1 \
+        nodejs>=12.15.0 \
+        npm>=12.15.01 \
     && apk add --no-cache --virtual .build-dependencies \
-        python=2.7.16-r3 \
-        build-base=0.5-r1 \
-        bluez=5.52-r1 \
-        linux-headers=4.19.36-r0 \
-        eudev-dev=3.2.9-r1 \
-        git=2.24.2-r1 \
+        python>=2.7.16 \
+        build-base>=0.5 \
+        bluez>=5.52 \
+        linux-headers>=4.19.36 \
+        eudev-dev>=3.2.9 \
+        git>=2.24.0 \
     \
     && npm set unsafe-perm true \
     && NODE_PATH="/usr/lib/node_modules" \
